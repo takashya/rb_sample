@@ -1,0 +1,13 @@
+log4r_config:
+  loggers:
+  - name: 'marking'
+    outputters:
+      - f1
+
+  outputters:
+  - type: FileOutputter
+    name: f1
+    filename: 'outputa.log'
+    formatter:
+      type: PatternFormatter
+      pattern: "%d [%l] - f1 "
